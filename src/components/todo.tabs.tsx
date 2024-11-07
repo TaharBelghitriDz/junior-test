@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { cn, StateType, store, storeFunctions } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { CheckCheck, LayoutGrid, StretchHorizontal, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { toast } from "@/hooks/use-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function TodoTabs(props: { tab: StateType["tab"] }) {
   const notes = store.useListen((e) => e.notes);
