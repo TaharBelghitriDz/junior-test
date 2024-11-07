@@ -28,7 +28,7 @@ export default function TodoTabs(props: { tab: StateType["tab"] }) {
       defaultValue={props.tab}
       className="relative flex flex-col gap-5 items-start"
     >
-      <TabsList className=" gap-5  ">
+      <TabsList className=" gap-5 flex-col !h-auto items-start md:flex-row ">
         <TabsTrigger value="all" onClick={() => navigate("/")}>
           All
         </TabsTrigger>
