@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <Router>
-      <main className="w-full min-h-screen h-full bg-zinc-900 flex justify-center items-start p-20 line-clamp-1">
+      <main className="w-full min-h-screen h-full bg-zinc-900 flex justify-center items-start py-20 px-5 lg:px-20 line-clamp-1">
         <Toaster />
 
         {!isVerified ? (
